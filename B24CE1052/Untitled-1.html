@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature and Colors | Semantic HTML Project</title>
+</head>
+<body>
+
+    <header>
+        <h1>Nature and Color Exploration</h1>
+        <p>A study on the primary and secondary colors found in the natural world.</p>
+        
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#data">Color Data</a></li>
+                <li><a href="#feedback">Feedback Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section id="about">
+            <h2>Project Overview</h2>
+            <p>This page is designed to demonstrate <strong>Semantic HTML</strong>. Semantic tags are important because they tell the browser what the content <em>is</em>, rather than just how it should <em>look</em>.</p>
+            <p>By using tags like <code>&lt;section&gt;</code> and <code>&lt;article&gt;</code>, we improve SEO and help screen readers navigate the content for visually impaired users.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Visual Gallery</h2>
+            <figure>
+                <img src="download.jpeg" alt="A colorful Parrot with bright red, yellow, and blue feathers." width="400">
+                <figcaption>Figure 1: The Macaw displays a variety of primary colors.</figcaption>
+            </figure>
+        </section>
+
+        <section id="data">
+            <h2>Color Classification</h2>
+            
+            <h3>Types of Colors</h3>
+            <ul>
+                <li><strong>Primary Colors:</strong> Red, Blue, and Yellow.</li>
+                <li><strong>Secondary Colors:</strong> Green, Orange, and Purple.</li>
+            </ul>
+
+            <h3>Data Table</h3>
+            <table border="1">
+                <caption>Summary of Colors used in this project</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Color Name</th>
+                        <th scope="col">Category</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Yellow</td>
+                        <td>Primary</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Gray</td>
+                        <td>Neutral</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Green</td>
+                        <td>Secondary</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="feedback">
+            <h2>User Feedback</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name" required>
+                    </p>
+                    
+                    <p>
+                        <label for="color">Favorite Color:</label>
+                        <select id="color" name="user_color">
+                            <option value="red">Red</option>
+                            <option value="green">Green</option>
+                            <option value="yellow">Yellow</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="comments">Comments:</label><br>
+                        <textarea id="comments" name="user_comments" rows="4" cols="30"></textarea>
+                    </p>
+                    
+                    <button type="submit">Submit Data</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2024 HTML Structure Assignment | Page created without CSS or JS.</p>
+    </footer>
+
+</body>
+</html>
